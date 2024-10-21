@@ -1,0 +1,38 @@
+body {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: rgb(222, 243, 177);
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    height: 5px;
+    background: rgb(46, 29, 179);
+    border-radius: 5px;
+    margin: 3px 0px;
+    transform-origin: left;
+    transition: all 0.5s;
+}
+
+.hamburger-menu:hover .top {
+    transform: rotate(45deg);
+}
+
+.hamburger-menu:hover .middle {
+    opacity: 0;
+}
+
+.hamburger-menu:hover .bottom {
+    transform: rotate(-45deg);
+}
